@@ -6,7 +6,7 @@ metadata:
   name: wordpress
   #namespace: dev
 spec:
-  #host: wordpress-dev.apps-crc.testing
+  host: wordpress-dev.apps-crc.testing/wordpress
   port:
     targetPort: web
   to:
