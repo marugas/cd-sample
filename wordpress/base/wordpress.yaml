@@ -18,7 +18,8 @@ kind: Route
 metadata:
   name: wordpress
 spec:
-  host:
+  port:
+    targetPort: 8080-tcp
   to:
     kind: Service
     name: wordpress
