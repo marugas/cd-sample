@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - mysql.yaml
   - wordpress.yaml
-#  - route.yaml
+  - route.yaml
