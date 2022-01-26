@@ -10,7 +10,8 @@ spec:
       targetPort: 8080
       name: web
   selector:
-    name: wordpress
+    app: wordpress
+    tier: frontend
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
