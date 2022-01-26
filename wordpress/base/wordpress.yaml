@@ -45,9 +45,8 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: dev/openshift-wordpress-git:latast
+      - image: default-route-openshift-image-registry.apps-crc.testing/dev/openshift-wordpress-git
         name: wordpress
-        imagePullPolicy: Always
         env:
         - name: WORDPRESS_DB_HOST
           value: wordpress-mysql
