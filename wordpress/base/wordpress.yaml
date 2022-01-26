@@ -47,7 +47,7 @@ spec:
       containers:
       - image: dev/openshift-wordpress-git:latast
         name: wordpress
-        imagePullPolicy: Never
+        imagePullPolicy: Always
         env:
         - name: WORDPRESS_DB_HOST
           value: wordpress-mysql
