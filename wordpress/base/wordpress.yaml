@@ -60,8 +60,8 @@ spec:
           value: wordpress
         - name: WORDPRESS_DB_USER
           value: wordpress
-        - name: WORDPRESS_DB_PASSWORD
-          value: wordpress
+#        - name: WORDPRESS_DB_PASSWORD
+#          value: wordpress
         ports:
         - containerPort: 8080
           name: wordpress
