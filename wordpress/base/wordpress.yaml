@@ -21,7 +21,7 @@ metadata:
     app: wordpress
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: 20Gi
@@ -61,7 +61,7 @@ spec:
           name: wordpress
         volumeMounts:
         - name: wordpress-persistent-storage
-          mountPath: /var/www/html
+          mountPath: /opt/app-root/src/pv-uploads
       volumes:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
