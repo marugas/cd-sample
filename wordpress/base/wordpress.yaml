@@ -14,6 +14,16 @@ spec:
     tier: frontend
 ---
 apiVersion: v1
+kind: Route
+metadata:
+  name: wordpress
+spec:
+  host:
+  to:
+    kind: Service
+    name: wordpress
+---
+apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: wp-pv-claim
